@@ -10,7 +10,7 @@
 
 #include "DefaultResources.h"
 #include "OpenGLView.h"
-#include "OpenGLViewDelegate.h"
+#include "Delegate.h"
 
 using namespace std;
 
@@ -23,7 +23,7 @@ int main ( int argc, char **argv )
 
     VkSimpleWindow* win = new VkSimpleWindow("OpenGLView");
 
-    OpenGLViewDelegate delegate;
+    Delegate delegate;
 
     OpenGLView view("opengl_view", win->mainWindowWidget(), &delegate);
     win->addView(view);
